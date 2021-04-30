@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import youtube from './Youtube.js';
 import SearchBar from './Searchbar.js'
+import VideoList from './VideoList';
 
 class App extends Component {
 
