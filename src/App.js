@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import youtube from './Youtube.js';
 import SearchBar from './Searchbar.js'
 import VideoList from './VideoList';
+import VideoDetail from './VideoDetail.js'
 
 class App extends Component {
 
