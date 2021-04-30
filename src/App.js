@@ -29,12 +29,22 @@ class App extends Component {
   }
 
     render() {
-      return (
-        <div className='container'>
-            <SearchBar handleFormSubmit={this.handleSubmit}/>
-        </div>
-    )
-  }
+        return (
+          <div className='container'>
+              <SearchBar handleFormSubmit={this.handleSubmit}/>
+              <div className='container'>
+                  <div className="row">
+                      <div className="col-9">
+                          <VideoDetail video={this.state.selectedVideo}/>
+                      </div>
+                      <div className="col-3">
+                          <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos}/>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      )
+    }
 }
 
 export default App;
